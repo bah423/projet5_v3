@@ -1,0 +1,796 @@
+/*Les différentes types de polices utilisées*/
+@font-face{ 
+    font-family: "Roboto";
+    src:url(Roboto.eot) format('eot');
+    src:url(Roboto.svg) format('svg');
+    src:url(Roboto.woff) format('woff');
+    src:url(Roboto.ttf) format('ttf');
+} 
+@font-face{ 
+font-family: "Montserrat";
+src:url(Montserrat.eot) format('eot');
+src:url(Montserrat.svg) format('svg');
+src:url(Montserrat.woff) format('woff');
+src:url(Montserrat.ttf) format('ttf');
+} 
+/*Le code principal*/
+body {
+    font-family: 'Montserrat', Impact, sans-serif;
+    font-size: .7em;
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    list-style: none;
+}
+header{
+    font-size: 1.2em;
+    margin:0px;
+    padding: 0px;
+    background-color:#1F618D;
+}
+
+.conteneur {
+    width: 100%
+}
+.titre1{ text-align: center;}
+.containeur-page {
+    width: 100%;
+    margin: 0px;
+}
+nav ul li a{
+    font-size: 1.1em;
+    color: white;
+    background-color:#1F618D;
+}
+.navbar{
+    color: white;
+    background-color:#1F618D;
+    justify-content: center;
+}
+.navbar > a{
+    color: white;
+  
+}
+.navbar-brand{
+    font-size: 1.1em;
+    background-color:#1F618D;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 3px;
+    flex-wrap: wrap;
+}
+
+nav{
+    display: flex; 
+}
+
+nav > ul li {display: flex; margin-left: 2%; margin-right: 2%;}
+#navbarContent  ul li a {
+    color:white;
+    background-color: #D35400;
+}
+#navbarContent {
+    justify-content: space-around;
+}
+#navbarContent ul li {
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-around;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+input {
+    color: black;
+    width: 300px;
+}
+label {
+    color: black;
+    font-weight: 900;
+}
+.container-page{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.container-header{
+    width: 100%;
+    margin-bottom: 2%;
+}
+.conteneur-trois-paniers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*Alignement des images avec secriptions et prix*/
+#panier1 > p:nth-child(2){ /*le prix*/
+    margin:auto;
+    font-size: 2.5em;
+    width: 30%;
+    color: black;
+    font-weight: bold;
+    transform: translate(40px, -300px)
+}
+#panier1 > p:nth-child(3) { /*la description*/
+    width: 35%;
+    height: auto;
+    margin: auto;
+    font-size: 1.8em;
+    color: black;
+    transform: translate(80px, -280px)
+}
+#panier1 > p:nth-child(5){ /*le prix*/
+    margin:auto;
+    font-size: 2.5em;
+    width: 30%;
+    color: black;
+    font-weight: bold;
+    transform: translate(40px, -300px)
+}
+#panier1 > p:nth-child(6) { /*la description*/
+    width: 35%;
+    height: auto;
+    margin: auto;
+    font-size: 1.8em;
+    color: black;
+    transform: translate(80px, -280px)
+}
+#panier1 > p:nth-child(8){ /*le prix*/
+    margin:auto;
+    font-size: 2.5em;
+    width: 30%;
+    color: black;
+    font-weight: bold;
+    transform: translate(40px, -300px)
+}
+#panier1 > p:nth-child(9) { /*la description*/
+    width: 35%;
+    height: auto;
+    margin: auto;
+    font-size: 1.8em;
+    color: black;
+    transform: translate(80px, -280px)
+}
+#panier1 > p:nth-child(11){ /*le prix*/
+    margin:auto;
+    font-size: 2.5em;
+    width: 30%;
+    color: black;
+    font-weight: bold;
+    transform: translate(40px, -300px)
+}
+#panier1 > p:nth-child(12) { /*la description*/
+    width: 35%;
+    height: auto;
+    margin: auto;
+    font-size: 1.8em;
+    color: black;
+    transform: translate(80px, -280px)
+}
+#panier1 > p:nth-child(14){ /*le prix*/
+    margin:auto;
+    font-size: 2.5em;
+    width: 30%;
+    color: black;
+    font-weight: bold;
+    transform: translate(40px, -300px)
+}
+#panier1 > p:nth-child(15) { /*la description*/
+    width: 35%;
+    height: auto;
+    margin: auto;
+    font-size: 1.8em;
+    color: black;
+    transform: translate(80px, -280px)
+}
+
+p{
+    margin-left: 2%;
+    flex-wrap: wrap;
+}
+#panier1 {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#panier1 img {
+    box-shadow: 4px 5px 4px #838282;
+    border: 2px solid #838282;
+    width: 30%;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+}
+#panier1 img:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.subtotal{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-color:#1F618D;
+    font-size: 2.2em;
+    text-align: center;
+    color: white;
+}
+.cont-panier-form{
+    display: flex;
+    justify-content: space-around;
+}
+.cont-form{
+    font-size: 1.7em;
+    margin-top: 7%;
+    transform: translate(500px, -100px);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.vers-commande{
+    font-size: .9em;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    background-color: #5dda5d;
+    color: black;
+    font-weight: bold;
+    border-radius: 15px;
+    width: 90%;
+    height: 50px;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+    transform: scale(1.05);
+    transition: .3s;
+ }
+.vers-commande:hover{
+    transform: scale(1.05);
+    transition: .3s;
+    background-color: green;
+}
+footer{
+    margin-top: 5%;
+    font-family: 'Montserrat', Impact, sans-serif;
+    background-color:#1F618D;
+    font-size: 2.2em;
+    color: white;
+    text-align: center;
+}
+/*La media qury pour les screen entre 641px et 1024px*/
+@media screen and (max-width: 1204px){
+    header{
+        font-size: .9em;
+    }
+    #navbarContent ul {
+        display: flex;
+        flex-direction: row;
+        transform: translateX(-70px);
+        width: 70%;
+    }
+    #navbarContent ul li {
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: space-around;
+    }
+    #navbarContent  ul li a{
+        width: 120px;
+    }
+    #panier1 img {
+        width: 65%;
+        margin-top: 10%;
+        margin-left: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+    #panier1 img {
+        box-shadow: 4px 5px 4px #838282;
+        border: 2px solid #838282;
+        width: 30%;
+        margin-left: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+    /*Alignement des images avec secriptions et prix*/
+#panier1 > p:nth-child(2){ /*le prix*/
+    margin:auto;
+    font-size: 1.2em;
+    width: 30%;
+    color: black;
+    font-weight: bold;
+    transform: translate(5px, -130px)
+}
+#panier1 > p:nth-child(3) { /*la description*/
+    width: 225px;
+    height: auto;
+    margin: auto;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(10px, -110px)
+}
+#panier1 > p:nth-child(5){ /*le prix*/
+    margin:auto;
+    font-size: 1.2em;
+    width: 30%;
+    color: black;
+    font-weight: bold;
+    transform: translate(5px, -130px)
+}
+#panier1 > p:nth-child(6) { /*la description*/
+    width: 225px;
+    height: auto;
+    margin: auto;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(10px, -110px)
+}
+#panier1 > p:nth-child(8){ /*le prix*/
+    margin:auto;
+    font-size: 1.2em;
+    width: 30%;
+    color: black;
+    font-weight: bold;
+    transform: translate(5px, -130px)
+}
+#panier1 > p:nth-child(9) { /*la description*/
+    width: 225px;
+    height: auto;
+    margin: auto;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(10px, -110px)
+}
+#panier1 > p:nth-child(11){ /*le prix*/
+    margin:auto;
+    font-size: 1.2em;
+    width: 30%;
+    color: black;
+    font-weight: bold;
+    transform: translate(5px, -130px)
+}
+#panier1 > p:nth-child(12) { /*la description*/
+    width: 225px;
+    height: auto;
+    margin: auto;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(10px, -110px)
+}
+#panier1 > p:nth-child(14){ /*le prix*/
+    margin:auto;
+    font-size: 1.2em;
+    width: 30%;
+    color: black;
+    font-weight: bold;
+    transform: translate(5px, -130px)
+}
+#panier1 > p:nth-child(15) { /*la description*/
+    width: 225px;
+    height: auto;
+    margin: auto;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(10px, -110px)
+}
+
+    .cont-form{
+        font-size: 1.2em;
+        margin-top: 2%;
+        transform: translate(240px, -10px);
+        position: fixed;
+    }
+    input {
+        color: black;
+        width: 150px;
+    }
+    .vers-commande{
+        font-size: .8em;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        background-color: #5dda5d;
+        color: black;
+        font-weight: bold;
+        border-radius: 10px;
+        width: 150px;
+        height: 35px;
+    }
+    footer{
+        font-size: 1.2em;
+    }
+
+}
+/*La media qury pour les screen entre 501px et 640px*/
+@media screen and (max-width: 640px){
+    header{
+        font-size: .9em;
+    }
+    #navbarContent ul {
+        display: flex;
+        flex-direction: row;
+        transform: translateX(-50px);
+        width: 70%;
+    }
+    #navbarContent ul li {
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: space-around;
+    }
+    #navbarContent  ul li a{
+        width: 80px;
+    }
+    #panier1 img {
+        width: 65%;
+        margin-top: 10%;
+        margin-left: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+    /*Alignement des images avec secriptions et prix*/
+#panier1 > p:nth-child(2){ /*le prix*/
+    margin: auto;
+    font-size: 1.5em;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(3) { /*la description*/
+    width: 50%;
+    margin-left: 2%;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(5){ /*le prix*/
+    margin:auto;
+    font-size: 1.5em;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(6) { /*la description*/
+    width: 50%;
+    margin-left: 2%;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(8){ /*le prix*/
+    margin:auto;
+    font-size: 1.5em;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(9) { /*la description*/
+    width: 50%;
+    margin-left: 2%;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(11){ /*le prix*/
+    margin:auto;
+    font-size: 1.5em;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(12) { /*la description*/
+    width: 50%;
+    margin-left: 2%;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(14){ /*le prix*/
+    margin:auto;
+    font-size: 1.5em;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(15) { /*la description*/
+    width: 50%;
+    margin-left: 2%;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(0px, 0px)
+}
+    .cont-form{
+        font-size: 1.05em;
+        margin-top: 2%;
+        transform: translate(180px, -10px);
+        position: fixed;
+    }
+    input {
+        color: black;
+        width: 130px;
+    }
+    .vers-commande{
+        font-size: .8em;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        background-color: #5dda5d;
+        color: black;
+        font-weight: bold;
+        border-radius: 10px;
+        width: 130px;
+        height: 35px;
+    }
+    footer{
+        font-size: 1.05em;
+    }
+
+}
+/*La media qury pour les screen entre 376px et 500px*/
+@media screen and (max-width: 500px){
+    header{
+        font-size: .9em;
+    }
+    #navbarContent ul {
+        display: flex;
+        flex-direction: column;
+        transform: translateX(10%);
+        width: 80%;
+    }
+    #navbarContent ul li {
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: space-around;
+    }
+    #navbarContent  ul li a{
+        width: 125px;
+    }
+    #panier1 img {
+        width: 65%;
+        margin-top: 10%;
+        margin-left: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+    /*Alignement des images avec secriptions et prix*/
+#panier1 > p:nth-child(2){ /*le prix*/
+    margin: auto;
+    font-size: 1.5em;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(3) { /*la description*/
+    width: 50%;
+    margin-left: 2%;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(5){ /*le prix*/
+    margin:auto;
+    font-size: 1.5em;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(6) { /*la description*/
+    width: 50%;
+    margin-left: 2%;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(8){ /*le prix*/
+    margin:auto;
+    font-size: 1.5em;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(9) { /*la description*/
+    width: 50%;
+    margin-left: 2%;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(11){ /*le prix*/
+    margin:auto;
+    font-size: 1.5em;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(12) { /*la description*/
+    width: 50%;
+    margin-left: 2%;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(14){ /*le prix*/
+    margin:auto;
+    font-size: 1.5em;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(15) { /*la description*/
+    width: 50%;
+    margin-left: 2%;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(0px, 0px)
+}
+    .cont-form{
+        font-size: .9em;
+        margin-top: 4%;
+        transform: translate(140px, -10px);
+        position: fixed;
+    }
+    input {
+        color: black;
+        width: 100px;
+    }
+    .vers-commande{
+        font-size: .8em;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        background-color: #5dda5d;
+        color: black;
+        font-weight: bold;
+        border-radius: 10px;
+        width: 100px;
+        height: 35px;
+    }
+    footer{
+        font-size: 1.05em;
+    }
+
+}
+
+/*La media qury pour les screen entre 300px et 374px*/
+@media screen and (max-width: 375px){
+    header{
+        font-size: .9em;
+    }
+    #navbarContent ul {
+        display: flex;
+        flex-direction: column;
+        transform: translateX(10%);
+        width: 80%;
+    }
+    #navbarContent ul li {
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: space-around;
+    }
+    #navbarContent  ul li a{
+        width: 80%;
+    }
+    #panier1 img {
+        width: 65%;
+        margin-top: 10%;
+        margin-left: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+    /*Alignement des images avec secriptions et prix*/
+#panier1 > p:nth-child(2){ /*le prix*/
+    margin: auto;
+    font-size: 1.5em;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(3) { /*la description*/
+    width: 50%;
+    margin-left: 2%;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(5){ /*le prix*/
+    margin:auto;
+    font-size: 1.5em;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(6) { /*la description*/
+    width: 50%;
+    margin-left: 2%;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(8){ /*le prix*/
+    margin:auto;
+    font-size: 1.5em;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(9) { /*la description*/
+    width: 50%;
+    margin-left: 2%;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(11){ /*le prix*/
+    margin:auto;
+    font-size: 1.5em;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(12) { /*la description*/
+    width: 50%;
+    margin-left: 2%;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(14){ /*le prix*/
+    margin:auto;
+    font-size: 1.5em;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 0px)
+}
+#panier1 > p:nth-child(15) { /*la description*/
+    width: 50%;
+    margin-left: 2%;
+    font-size: 1.1em;
+    color: black;
+    transform: translate(0px, 0px)
+}
+    .cont-form{
+        font-size: .9em;
+        margin-top: 4%;
+        transform: translate(140px, -10px);
+        position: fixed;
+    }
+    input {
+        color: black;
+        width: 50%;
+    }
+    .vers-commande{
+        font-size: .8em;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        background-color: #5dda5d;
+        color: black;
+        font-weight: bold;
+        border-radius: 10px;
+        width: 50%;
+        height: 35px;
+    }
+    footer{
+        font-size: 1em;
+    }
+
+}

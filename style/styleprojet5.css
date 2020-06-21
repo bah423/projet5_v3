@@ -1,0 +1,329 @@
+/*Les différentes types de polices utilisées*/
+@font-face{ 
+    font-family: "Roboto";
+    src:url(Roboto.eot) format('eot');
+    src:url(Roboto.svg) format('svg');
+    src:url(Roboto.woff) format('woff');
+    src:url(Roboto.ttf) format('ttf');
+} 
+@font-face{ 
+font-family: "Montserrat";
+src:url(Montserrat.eot) format('eot');
+src:url(Montserrat.svg) format('svg');
+src:url(Montserrat.woff) format('woff');
+src:url(Montserrat.ttf) format('ttf');
+} 
+
+/*code principal*/
+body{
+    font-family: 'Montserrat', Impact, sans-serif;
+    font-size: 1.2em;
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
+header{
+    margin:0px;
+    padding: 0px;
+    background-color:#5499C7;
+}
+
+.containeur {
+    width: 100%
+}
+.containeur-page {
+    width: 100%;
+    margin: 0px;
+}
+nav ul li a{
+    font-size: .9em;
+    color: white;
+    background-color: #5499C7;
+}
+.navbar{
+    color: white;
+    background-color: #5499C7;
+    justify-content: center;
+}
+.navbar > a{
+    color: white;
+  
+}
+.navbar-brand{
+    background-color: #5499C7;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin: 3px;
+    background-color: teal;
+    flex-wrap: wrap;
+}
+a:hover{
+   text-decoration: none;
+   color: white;
+}
+nav{
+    display: flex; 
+}
+nav > ul li {display: flex; margin-left: 2%; margin-right: 2%;}
+#navbarContent  ul li a {
+    color:white;
+    background-color: #D35400;
+}
+#navbarContent {
+    justify-content: space-around;
+}
+#navbarContent ul li {
+    margin-left: 0px;
+    margin-right: 50px;
+    justify-content: space-around;
+}
+.titre{
+    font-family: 'Roboto', Impact, sans-serif;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    background-color:#1F618D;
+    color: white;
+    font-size: 1.5em;
+}
+.titre1 {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-size: 1.1em;
+}
+.titre1 p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bloc-nav{display:flex;}
+ header nav ul li{
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.identification{display: flex;flex-direction: column;}
+header nav ul li ul li {
+    display: none;
+    color: white;
+  }
+.arti ul { 
+    display: flex;
+    flex-direction: column;
+}
+header nav ul li:hover ul li{
+    display: block;
+  }
+  header nav ul li:hover ul li a{
+    background-color: brown;
+  }
+
+  .panier{
+      font-size: .8em;
+      color: white;
+      font-weight: bold;
+      margin-top: .1%;
+      margin-right: 2%;
+  }
+  .panier img {
+      color: tomato;
+  }
+.cont-articles{
+    margin-bottom: 5%;
+    display: flex; 
+}
+.section-categorie{
+    width: 16%;}
+.section-aticles{
+    display: flex;
+    margin: auto;
+    width: 100%;
+   
+}
+.en-tete-items{
+    background-color: teal;
+    color: white;
+}
+.section-aticles > div {
+    display: flex; 
+    margin-left: 0px; 
+    text-align: center;
+    width: 100%;
+    border: solid 2px blue;
+}
+
+.teddy{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+}
+.teddy > a{
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    width: 18%;
+    margin: 1%;
+    height: auto;
+}
+.teddy > a > img {
+    width: 100%;
+}
+.teddy > a:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+footer{
+    /*position: fixed; bottom: 0px; left: 0; right: 0;*/
+    background-color: #5499C7;
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+}
+/*La meida query pour les écrans de largeur comprise entre 768px et 1024px*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .teddy {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        margin: auto;
+    }
+    .teddy a {
+        font-size: 1.2em;
+        width: 100%;
+    }
+    .teddy > a:hover {
+        transform: none;
+    }
+    #navbarContent  ul li a {
+        width: 100px;
+        height: 70px;
+        color:white;
+        background-color: #D35400;
+    }
+    #navbarContent {
+        width: 40%;
+        transform: translateX(-150px);
+        /*justify-content: space-between;*/
+    }
+
+    #navbarContent ul {
+        transform: translateX(-130px);
+        width: 10%;
+    }
+    #navbarContent ul li {
+        margin-left: 20px;
+        margin-right: 20px;
+        /*justify-content: space-between;*/
+    }
+}
+/*La meida query pour les écrans de largeur comprise entre 400px et 767px*/
+@media screen and (min-width: 400px) and (max-width: 767px){
+    .containeur {
+        width: 100%;
+    }
+   .containeur-page {
+        width: 100%;
+        margin: 0px;
+    }
+    nav ul li a{
+        color: white;
+        background-color: #5499C7;
+    }
+    #navbarContent{
+        width: 60%;
+    }
+    #navbarContent ul {
+        transform: translateX(-80px);
+        width: 10%;
+    }
+    #navbarContent ul li {
+        transform: translateX(-70px);
+        margin-left: 5px;
+        margin-right: 5px;
+        /*justify-content: space-around;*/
+    }
+    #navbarContent  ul li a {
+        text-align: center;
+        width: 70px;
+        height: 67px;
+        padding-top: 0px;
+        transform: translateX(0px);
+        font-size: .8em;
+        color:white;
+        background-color: #D35400;
+    }
+    .teddy {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        margin: auto;
+    }
+    .teddy a {
+        font-size: 1.2em;
+        width: 100%;
+    }
+    .teddy > a:hover {
+        transform: none;
+    }
+    .section-aticles > div {
+        margin-bottom: 12%;
+    }
+}
+/*La meida query pour les écrans de largeur comprise entre 310px et 399px*/
+@media screen and (min-width: 310px) and (max-width: 399px){
+    #navbarContent {
+        width: 100%;
+    }
+    #navbarContent  ul {
+    display: flex;
+    flex-direction: column;
+}
+#navbarContent  ul li a {
+    transform: translateX(50px);
+    color:white;
+    background-color: #D35400;
+}
+    .containeur {
+        width: 100%;
+        
+    }
+    .containeur-page {
+        width: 100%;
+        margin: 0px;
+    }
+    nav ul li a{
+        font-size: .8em;
+        width: 150px;
+        color: white;
+        background-color: #5499C7;
+    }
+    .teddy {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        margin: auto;
+    }
+    .teddy a {
+        font-size: 1.2em;
+        width: 100%;
+    }
+    .teddy > a:hover {
+        transform: none;
+    }
+    .section-aticles > div {
+        margin-bottom: 10%;
+    }
+}
