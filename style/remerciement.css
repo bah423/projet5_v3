@@ -28,7 +28,7 @@ li{
 header{
     margin:0px;
     padding: 0px;
-    background-color:#5499C7;
+    background-color:#1F618D;
 }
 
 .conteneur {
@@ -42,11 +42,11 @@ header{
 nav ul li a{
     font-size: .9em;
     color: white;
-    background-color: #5499C7;
+    background-color:#1F618D;
 }
 .navbar{
     color: white;
-    background-color: #5499C7;
+    background-color:#1F618D;
     justify-content: center;
 }
 .navbar > a{
@@ -54,7 +54,7 @@ nav ul li a{
   
 }
 .navbar-brand{
-    background-color: #5499C7;
+    background-color:#1F618D;
 }
 a{
     text-decoration: none;
@@ -65,7 +65,7 @@ a{
 a:hover{
    text-decoration: none;
    color: white;
-   transform: scale(1.1);
+   transform: scale(1.05);
    transition: .3s;
 }
 nav{
@@ -90,9 +90,10 @@ nav > ul li {display: flex; margin-left: 2%; margin-right: 2%;}
     font-size: 1.6em;
     margin-left: 10%;
     width: 80%;
-    color: #00FF00;
-    background-color: #909497;
-    box-shadow: 5px 6px 6px black;
+    font-weight: bold;
+    color: #0df65b;
+    background-color: black;
+    box-shadow: 5px 6px 6px grey;
     text-align: center;
     margin-top: 3%;
     margin-bottom: 5%;
@@ -111,24 +112,110 @@ section{
     background-color: blue;
     color: white;
 }
-#cont-article{
+
+#command_orderId{
     background-color: blue;
     color: white;
 }
-/*#command_orderId{
-    background-color: blue;
-    color: white;
-}*/
 #command_email{
     background-color: blue;
     color: white;
 }
 
 footer{
-    margin-top: 15%;
-    background-color: #5499C7;
+    margin-top: 12%;
+    background-color:#1F618D;
     color: white;
     font-size: 1.2em;
-    /*position: fixed; bottom: 0px; left: 0; right: 0;*/
     text-align: center;
+}
+/*La media query de largeur maximale 1024px*/
+@media screen and (max-width: 1024px){
+    header{
+        font-size: 1.5em;
+    }
+    #navbarContent ul {
+        display: flex;
+        flex-direction: column;
+        transform: translateX(10%);
+        width: 80%;
+    }
+    #navbarContent ul li {
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: space-around;
+    }
+    #navbarContent  ul li a{
+        width: 80%;
+    }
+    .merci{
+        font-size: 1.5em;
+    }
+    body{
+        font-size: 1.9em;
+    }
+    footer{
+        margin-top: 15%;
+        font-size: 1.2em;
+    }
+}
+/*La media query de largeur maximale 767px*/
+@media screen and (max-width: 767px){
+    header{
+        font-size: 1em;
+    }
+    #navbarContent ul {
+        display: flex;
+        flex-direction: column;
+        transform: translateX(10%);
+        width: 80%;
+    }
+    #navbarContent ul li {
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: space-around;
+    }
+    #navbarContent  ul li a{
+        width: 80%;
+    }
+    .merci{
+        font-size: 1.5em;
+    }
+    body{
+        font-size: 1.1em;
+    }
+    footer{
+        font-size: 1.1em;
+    }
+}
+
+/*La media query de largeur maximale 375px*/
+@media screen and (max-width: 375px){
+    header{
+        font-size: .9em;
+    }
+    #navbarContent ul {
+        display: flex;
+        flex-direction: column;
+        transform: translateX(10%);
+        width: 80%;
+    }
+    #navbarContent ul li {
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: space-around;
+    }
+    #navbarContent  ul li a{
+        width: 80%;
+    }
+    .merci{
+        font-size: 1.2em;
+    }
+    body{
+        font-size: 1.1em;
+    }
+    footer{
+        margin-top: 30%;
+        font-size: 1em;
+    }
 }

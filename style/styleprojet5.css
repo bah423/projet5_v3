@@ -27,7 +27,7 @@ li{
 header{
     margin:0px;
     padding: 0px;
-    background-color:#5499C7;
+    background-color:#1F618D;
 }
 
 .containeur {
@@ -40,11 +40,11 @@ header{
 nav ul li a{
     font-size: .9em;
     color: white;
-    background-color: #5499C7;
+    background-color:#1F618D;
 }
 .navbar{
     color: white;
-    background-color: #5499C7;
+    background-color:#1F618D;
     justify-content: center;
 }
 .navbar > a{
@@ -52,14 +52,14 @@ nav ul li a{
   
 }
 .navbar-brand{
-    background-color: #5499C7;
+    background-color:#1F618D;
 }
 
 a{
     text-decoration: none;
     color: white;
     margin: 3px;
-    background-color: teal;
+    background-color: #057070;
     flex-wrap: wrap;
 }
 a:hover{
@@ -133,6 +133,8 @@ header nav ul li:hover ul li{
       margin-right: 2%;
   }
   .panier img {
+      background-color: white;
+      object-fit: cover;
       color: tomato;
   }
 .cont-articles{
@@ -148,7 +150,7 @@ header nav ul li:hover ul li{
    
 }
 .en-tete-items{
-    background-color: teal;
+    background-color: #057070;
     color: white;
 }
 .section-aticles > div {
@@ -184,7 +186,7 @@ header nav ul li:hover ul li{
 
 footer{
     /*position: fixed; bottom: 0px; left: 0; right: 0;*/
-    background-color: #5499C7;
+    background-color:#1F618D;
     color: white;
     text-align: center;
     font-size: 1.1em;

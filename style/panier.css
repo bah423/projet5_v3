@@ -116,7 +116,7 @@ label {
     width: 30%;
     color: black;
     font-weight: bold;
-    transform: translate(40px, -300px)
+    transform: translate(-10px, -220px)
 }
 #panier1 > p:nth-child(3) { /*la description*/
     width: 35%;
@@ -124,7 +124,7 @@ label {
     margin: auto;
     font-size: 1.8em;
     color: black;
-    transform: translate(80px, -280px)
+    transform: translate(30px, -200px)
 }
 #panier1 > p:nth-child(5){ /*le prix*/
     margin:auto;
@@ -132,7 +132,7 @@ label {
     width: 30%;
     color: black;
     font-weight: bold;
-    transform: translate(40px, -300px)
+    transform: translate(-10px, -220px)
 }
 #panier1 > p:nth-child(6) { /*la description*/
     width: 35%;
@@ -140,7 +140,7 @@ label {
     margin: auto;
     font-size: 1.8em;
     color: black;
-    transform: translate(80px, -280px)
+    transform: translate(30px, -200px)
 }
 #panier1 > p:nth-child(8){ /*le prix*/
     margin:auto;
@@ -148,7 +148,7 @@ label {
     width: 30%;
     color: black;
     font-weight: bold;
-    transform: translate(40px, -300px)
+    transform: translate(-10px, -220px)
 }
 #panier1 > p:nth-child(9) { /*la description*/
     width: 35%;
@@ -156,7 +156,7 @@ label {
     margin: auto;
     font-size: 1.8em;
     color: black;
-    transform: translate(80px, -280px)
+    transform: translate(30px, -200px)
 }
 #panier1 > p:nth-child(11){ /*le prix*/
     margin:auto;
@@ -164,7 +164,7 @@ label {
     width: 30%;
     color: black;
     font-weight: bold;
-    transform: translate(40px, -300px)
+    transform: translate(-10px, -220px)
 }
 #panier1 > p:nth-child(12) { /*la description*/
     width: 35%;
@@ -172,7 +172,7 @@ label {
     margin: auto;
     font-size: 1.8em;
     color: black;
-    transform: translate(80px, -280px)
+    transform: translate(30px, -200px)
 }
 #panier1 > p:nth-child(14){ /*le prix*/
     margin:auto;
@@ -180,7 +180,7 @@ label {
     width: 30%;
     color: black;
     font-weight: bold;
-    transform: translate(40px, -300px)
+    transform: translate(-10px, -220px)
 }
 #panier1 > p:nth-child(15) { /*la description*/
     width: 35%;
@@ -188,7 +188,7 @@ label {
     margin: auto;
     font-size: 1.8em;
     color: black;
-    transform: translate(80px, -280px)
+    transform: translate(30px, -200px)
 }
 
 p{
@@ -205,7 +205,7 @@ p{
     box-shadow: 4px 5px 4px #838282;
     border: 2px solid #838282;
     width: 30%;
-    margin-left: 6%;
+    margin-left: 3%;
     display: flex;
     flex-direction: column;
 }
@@ -228,9 +228,16 @@ p{
     display: flex;
     justify-content: space-around;
 }
+.compt-formulaire{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+}
 .cont-form{
-    font-size: 1.7em;
+    text-align: center;
+    font-size: 1.2em;
     margin-top: 7%;
+    margin-bottom: 4%;
     transform: translate(500px, -100px);
     position: fixed;
     display: flex;
@@ -270,7 +277,7 @@ footer{
 /*La media qury pour les screen entre 641px et 1024px*/
 @media screen and (max-width: 1204px){
     header{
-        font-size: .9em;
+        font-size: 1.7em;
     }
     #navbarContent ul {
         display: flex;
@@ -284,128 +291,144 @@ footer{
         justify-content: space-around;
     }
     #navbarContent  ul li a{
-        width: 120px;
+        width: 125px;
     }
     #panier1 img {
-        width: 65%;
-        margin-top: 10%;
-        margin-left: 2%;
+        width: 80%;
+        margin: auto;
         display: flex;
         flex-direction: column;
     }
-    #panier1 img {
-        box-shadow: 4px 5px 4px #838282;
-        border: 2px solid #838282;
-        width: 30%;
-        margin-left: 2%;
-        display: flex;
-        flex-direction: column;
-    }
-    /*Alignement des images avec secriptions et prix*/
-#panier1 > p:nth-child(2){ /*le prix*/
-    margin:auto;
-    font-size: 1.2em;
-    width: 30%;
+ /*Alignement des images avec secriptions et prix*/
+ #panier1 > p:nth-child(2){ /*le prix*/
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 2.8em;
     color: black;
     font-weight: bold;
-    transform: translate(5px, -130px)
+    transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(3) { /*la description*/
-    width: 225px;
-    height: auto;
-    margin: auto;
-    font-size: 1.1em;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    font-size: 2.8em;
     color: black;
-    transform: translate(10px, -110px)
+    transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(5){ /*le prix*/
-    margin:auto;
-    font-size: 1.2em;
-    width: 30%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     color: black;
+    font-size: 2.8em;
     font-weight: bold;
-    transform: translate(5px, -130px)
+    transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(6) { /*la description*/
-    width: 225px;
-    height: auto;
-    margin: auto;
-    font-size: 1.1em;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: justify;
+    font-size: 2.8em;
     color: black;
-    transform: translate(10px, -110px)
+    transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(8){ /*le prix*/
-    margin:auto;
-    font-size: 1.2em;
-    width: 30%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     color: black;
+    font-size: 2.8em;
     font-weight: bold;
-    transform: translate(5px, -130px)
+    transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(9) { /*la description*/
-    width: 225px;
-    height: auto;
-    margin: auto;
-    font-size: 1.1em;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    font-size: 2.8em;
     color: black;
-    transform: translate(10px, -110px)
+    transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(11){ /*le prix*/
-    margin:auto;
-    font-size: 1.2em;
-    width: 30%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     color: black;
+    font-size: 2.8em;
     font-weight: bold;
-    transform: translate(5px, -130px)
+    transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(12) { /*la description*/
-    width: 225px;
-    height: auto;
-    margin: auto;
-    font-size: 1.1em;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    font-size: 2.8em;
     color: black;
-    transform: translate(10px, -110px)
+    transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(14){ /*le prix*/
-    margin:auto;
-    font-size: 1.2em;
-    width: 30%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     color: black;
+    font-size: 2.8em;
     font-weight: bold;
-    transform: translate(5px, -130px)
+    transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(15) { /*la description*/
-    width: 225px;
-    height: auto;
-    margin: auto;
-    font-size: 1.1em;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    font-size: 2.8em;
     color: black;
-    transform: translate(10px, -110px)
+    transform: translate(0px, 0px)
 }
-
+.cont-panier-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.compt-formulaire{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+}
     .cont-form{
-        font-size: 1.2em;
-        margin-top: 2%;
-        transform: translate(240px, -10px);
-        position: fixed;
+        text-align: center;
+        font-size: 3.5em;
+        margin-top: 7%;
+        margin-bottom: 4%;
     }
     input {
+        border: 2px solid grey;
         color: black;
-        width: 150px;
+        width: 75%;
+        height: 50px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .vers-commande{
-        font-size: .8em;
+        font-size: 1.2em;
         margin-top: 2%;
         margin-bottom: 5%;
         background-color: #5dda5d;
         color: black;
         font-weight: bold;
         border-radius: 10px;
-        width: 150px;
-        height: 35px;
+        width: 75%;
+        height: 75px;
     }
     footer{
-        font-size: 1.2em;
+        font-size: 2.8em;
     }
 
 }
@@ -429,97 +452,117 @@ footer{
         width: 80px;
     }
     #panier1 img {
-        width: 65%;
-        margin-top: 10%;
-        margin-left: 2%;
+        width: 95%;
+        margin: auto;
         display: flex;
         flex-direction: column;
     }
-    /*Alignement des images avec secriptions et prix*/
-#panier1 > p:nth-child(2){ /*le prix*/
+ /*Alignement des images avec secriptions et prix*/
+ #panier1 > p:nth-child(2){ /*le prix*/
+    width: 100%;
     margin: auto;
+    text-align: center;
     font-size: 1.5em;
-    width: 50%;
     color: black;
     font-weight: bold;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(3) { /*la description*/
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
-    font-size: 1.1em;
+    margin-right: 2%;
+    text-align: justify;
+    font-size: 1.3em;
     color: black;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(5){ /*le prix*/
-    margin:auto;
-    font-size: 1.5em;
-    width: 50%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     color: black;
     font-weight: bold;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(6) { /*la description*/
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
-    font-size: 1.1em;
+    margin-right: 2%;
+    text-align: justify;
+    font-size: 1.3em;
     color: black;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(8){ /*le prix*/
-    margin:auto;
-    font-size: 1.5em;
-    width: 50%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     color: black;
     font-weight: bold;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(9) { /*la description*/
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
-    font-size: 1.1em;
+    margin-right: 2%;
+    text-align: justify;
+    font-size: 1.3em;
     color: black;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(11){ /*le prix*/
-    margin:auto;
-    font-size: 1.5em;
-    width: 50%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     color: black;
     font-weight: bold;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(12) { /*la description*/
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
-    font-size: 1.1em;
+    margin-right: 2%;
+    text-align: justify;
+    font-size: 1.3em;
     color: black;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(14){ /*le prix*/
-    margin:auto;
-    font-size: 1.5em;
-    width: 50%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     color: black;
     font-weight: bold;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(15) { /*la description*/
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
-    font-size: 1.1em;
+    margin-right: 2%;
+    text-align: justify;
+    font-size: 1.3em;
     color: black;
     transform: translate(0px, 0px)
 }
+.cont-panier-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.compt-formulaire{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+}
     .cont-form{
-        font-size: 1.05em;
-        margin-top: 2%;
-        transform: translate(180px, -10px);
-        position: fixed;
+        text-align: center;
+        font-size: 1.1em;
+        margin-top: 4%;
     }
     input {
         color: black;
-        width: 130px;
+        width: 75%;
+        margin: auto;
     }
     .vers-commande{
         font-size: .8em;
@@ -529,11 +572,11 @@ footer{
         color: black;
         font-weight: bold;
         border-radius: 10px;
-        width: 130px;
+        width: 75%;
         height: 35px;
     }
     footer{
-        font-size: 1.05em;
+        font-size: 1.1em;
     }
 
 }
@@ -557,97 +600,117 @@ footer{
         width: 125px;
     }
     #panier1 img {
-        width: 65%;
-        margin-top: 10%;
-        margin-left: 2%;
+        width: 95%;
+        margin: auto;
         display: flex;
         flex-direction: column;
     }
-    /*Alignement des images avec secriptions et prix*/
-#panier1 > p:nth-child(2){ /*le prix*/
+ /*Alignement des images avec secriptions et prix*/
+ #panier1 > p:nth-child(2){ /*le prix*/
+    width: 100%;
     margin: auto;
+    text-align: center;
     font-size: 1.5em;
-    width: 50%;
     color: black;
     font-weight: bold;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(3) { /*la description*/
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
-    font-size: 1.1em;
+    margin-right: 2%;
+    text-align: justify;
+    font-size: 1.3em;
     color: black;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(5){ /*le prix*/
-    margin:auto;
-    font-size: 1.5em;
-    width: 50%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     color: black;
     font-weight: bold;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(6) { /*la description*/
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
-    font-size: 1.1em;
+    margin-right: 2%;
+    text-align: justify;
+    font-size: 1.3em;
     color: black;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(8){ /*le prix*/
-    margin:auto;
-    font-size: 1.5em;
-    width: 50%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     color: black;
     font-weight: bold;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(9) { /*la description*/
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
-    font-size: 1.1em;
+    margin-right: 2%;
+    text-align: justify;
+    font-size: 1.3em;
     color: black;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(11){ /*le prix*/
-    margin:auto;
-    font-size: 1.5em;
-    width: 50%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     color: black;
     font-weight: bold;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(12) { /*la description*/
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
-    font-size: 1.1em;
+    margin-right: 2%;
+    text-align: justify;
+    font-size: 1.3em;
     color: black;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(14){ /*le prix*/
-    margin:auto;
-    font-size: 1.5em;
-    width: 50%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     color: black;
     font-weight: bold;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(15) { /*la description*/
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
-    font-size: 1.1em;
+    margin-right: 2%;
+    text-align: justify;
+    font-size: 1.3em;
     color: black;
     transform: translate(0px, 0px)
 }
+.cont-panier-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.compt-formulaire{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+}
     .cont-form{
-        font-size: .9em;
+        text-align: center;
+        font-size: 1.1em;
         margin-top: 4%;
-        transform: translate(140px, -10px);
-        position: fixed;
     }
     input {
         color: black;
-        width: 100px;
+        width: 75%;
+        margin: auto;
     }
     .vers-commande{
         font-size: .8em;
@@ -657,7 +720,7 @@ footer{
         color: black;
         font-weight: bold;
         border-radius: 10px;
-        width: 100px;
+        width: 75%;
         height: 35px;
     }
     footer{
@@ -686,97 +749,117 @@ footer{
         width: 80%;
     }
     #panier1 img {
-        width: 65%;
-        margin-top: 10%;
-        margin-left: 2%;
+        width: 95%;
+        margin: auto;
         display: flex;
         flex-direction: column;
     }
     /*Alignement des images avec secriptions et prix*/
 #panier1 > p:nth-child(2){ /*le prix*/
+    width: 100%;
     margin: auto;
+    text-align: center;
     font-size: 1.5em;
-    width: 50%;
     color: black;
     font-weight: bold;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(3) { /*la description*/
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
-    font-size: 1.1em;
+    margin-right: 2%;
+    text-align: justify;
+    font-size: 1.2em;
     color: black;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(5){ /*le prix*/
-    margin:auto;
-    font-size: 1.5em;
-    width: 50%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     color: black;
     font-weight: bold;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(6) { /*la description*/
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
-    font-size: 1.1em;
+    margin-right: 2%;
+    text-align: justify;
+    font-size: 1.2em;
     color: black;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(8){ /*le prix*/
-    margin:auto;
-    font-size: 1.5em;
-    width: 50%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     color: black;
     font-weight: bold;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(9) { /*la description*/
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
-    font-size: 1.1em;
+    margin-right: 2%;
+    text-align: justify;
+    font-size: 1.2em;
     color: black;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(11){ /*le prix*/
-    margin:auto;
-    font-size: 1.5em;
-    width: 50%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     color: black;
     font-weight: bold;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(12) { /*la description*/
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
-    font-size: 1.1em;
+    margin-right: 2%;
+    text-align: justify;
+    font-size: 1.2em;
     color: black;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(14){ /*le prix*/
-    margin:auto;
-    font-size: 1.5em;
-    width: 50%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     color: black;
     font-weight: bold;
     transform: translate(0px, 0px)
 }
 #panier1 > p:nth-child(15) { /*la description*/
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
-    font-size: 1.1em;
+    margin-right: 2%;
+    text-align: justify;
+    font-size: 1.2em;
     color: black;
     transform: translate(0px, 0px)
 }
+.cont-panier-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.compt-formulaire{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+}
     .cont-form{
+        text-align: center;
         font-size: .9em;
         margin-top: 4%;
-        transform: translate(140px, -10px);
-        position: fixed;
     }
     input {
         color: black;
-        width: 50%;
+        width: 75%;
+        margin: auto;
     }
     .vers-commande{
         font-size: .8em;
@@ -786,7 +869,7 @@ footer{
         color: black;
         font-weight: bold;
         border-radius: 10px;
-        width: 50%;
+        width: 75%;
         height: 35px;
     }
     footer{

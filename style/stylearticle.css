@@ -26,7 +26,7 @@ li{
 header{
     margin:0px;
     padding: 0px;
-    background-color:#5499C7;
+    background-color:#1F618D;
 }
 
 .conteneur {
@@ -40,11 +40,11 @@ header{
 nav ul li a{
     font-size: .9em;
     color: white;
-    background-color: #5499C7;
+    background-color:#1F618D;
 }
 .navbar{
     color: white;
-    background-color: #5499C7;
+    background-color:#1F618D;
     justify-content: center;
 }
 .navbar > a{
@@ -52,7 +52,8 @@ nav ul li a{
   
 }
 .navbar-brand{
-    background-color: #5499C7;
+    font-size: 1.5;
+    background-color:#1F618D;
 }
 a{
     text-decoration: none;
@@ -72,6 +73,8 @@ nav{
 
 nav > ul li {display: flex; margin-left: 2%; margin-right: 2%;}
 #navbarContent  ul li a {
+    text-align: center;
+    width: 100%;
     color:white;
     background-color: #D35400;
 }
@@ -79,9 +82,15 @@ nav > ul li {display: flex; margin-left: 2%; margin-right: 2%;}
     justify-content: space-around;
 }
 #navbarContent ul li {
-    margin-left: 50px;
-    margin-right: 50px;
-    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    width: 80%;
+    /*justify-content: space-between;*/
+}
+#navbarContent ul {
+    width: 90%;
+    /*justify-content: space-between;*/
 }
 .titre{
     font-family: 'Roboto', Impact, sans-serif;
@@ -92,6 +101,7 @@ nav > ul li {display: flex; margin-left: 2%; margin-right: 2%;}
     font-size: 1.5em;
 }
 article{
+    width: 98%;
     text-align: justify;
     
 }
@@ -100,8 +110,10 @@ article{
     justify-content: space-between;
 }
 #descript{
+    padding-left: 2px;
+    padding-right: 2px;
     border: solid 2px blue;
-    padding-top: 2%;
+    padding-top: 0px;
     margin-left: 10%;
     margin-top: 1%;
 }
@@ -151,15 +163,28 @@ article{
 }
 .panier{
     color: white;
+    font-weight: bold;
     font-size: .8em;
     margin-top: .1%;
     margin-right: 2%;
 }
+.panier img {
+    width: 80px;
+    background-color: white;
+}
 #result{
-    color: white;
+    width: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+    /*font-family: 'Roboto', Impact, sans-serif;*/
+    background-color: black;
+    font-weight: bold;
     margin-top: 0px;
+    margin-left: 30%;
     padding-top: 0px;
-    transform: translate(38%, 100%);
+    padding-left: 2%;
+    text-align: center;
+    transform: translate(0px, 40px); 
 }
 
 .conte-page{
@@ -197,33 +222,166 @@ article{
     transition: .3s;
 }
 footer{
-    background-color: #5499C7;
+    background-color:#1F618D;
     color: white;
     font-weight: bold;
-    /*position: fixed; bottom: 0px; left: 0; right: 0;*/
     text-align: center;
 }
-@media screen and (min-width: 375px) and (max-width: 768px){
+@media screen and (max-width: 1024px){
+    header{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .panier {
+        transform: translateX(-10px);
+    }
+    .pani {
+        font-size: 1.8em;
+    }
+    .navbar {
+        width: 90%;
+    }
+    #navbarContent  ul li a {
+        font-size: 1.3em;
+        text-align: center;
+        width: 200px;
+        height: 90px;
+        color:white;
+        background-color: #D35400;
+    }
+    #navbarContent {
+        width: 50%;
+        margin-left: 10%;
+        margin-right: 10%;
+        /*transform: translateX(10%);*/
+
+    }
+    .coll{
+        width: 100%;
+        margin: auto;
+    }
+    #navbarContent ul {
+        display: flex;
+        flex-direction: column;
+        /*transform: translateX(20%);*/
+        width: 50%;
+    }
+    #navbarContent ul li {
+        width: 50%;
+        margin-left: 10px;
+        margin-right: 10px;
+        /*justify-content: space-between;*/
+    }
+
+    .conte-page{
+        font-size: 1.2em;
+        width: 95%;
+        margin: auto;
+    }
+    .titre{
+        font-size: 1.7em;
+    }
+   .cont-articles {
+       width: 98%;
+       flex-wrap: wrap;
+       font-size: 1.6em;
+   }
+   .section-ted {
+       width: 100%;
+   }
+   .div-img-desc-panier{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+   #balide1{
+    margin-bottom: 50px;
+    width: 100%;
+}
+    .image1  {
+    width: 100%;
+}
+    .image1 img {
+    width: 100%;
+}
+#nom_article h6{
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#descript{
+    margin-bottom: 8%;
+    font-size: 1.5;
+    margin-left: 0px;
+}
+#descript > h3{
+    font-size: 1.7em;
+}
+
+#prix_article h6{
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#bouton{
+    font-size: .8em;
+    width: 300px;
+    height: 100px;
+    margin-left: 10%;
+}
+.bouton_panier{
+    font-size: .8em;
+    margin-left: 10%;
+    width: 300px;
+    height: 100px;
+}
+
+   footer{
+       margin-top: 4%;
+       width: 100%;
+       font-size: 1.5em;
+       flex-wrap: wrap;
+   }
+   footer p {
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+footer div {
+    margin: auto;
+    width: 90%;
+    flex-wrap: wrap;
+}
+}
+@media screen and (max-width: 767px){
+    header{
+        font-size: .7em;
+    }
     .panier {
         transform: translateX(10px);
     }
+    nav > a {
+        transform: translateX(20px)
+    }
     #navbarContent  ul li a {
+        font-size: 1em;
         text-align: center;
-        width: 140px;
+        width: 90px;
         height: 60px;
         color:white;
         background-color: #D35400;
     }
     #navbarContent {
         width: 40%;
-        transform: translateX(10%);
+        /*transform: translateX(10%);
         /*justify-content: space-between;*/
     }
 
     #navbarContent ul {
         display: flex;
         flex-direction: column;
-        transform: translateX(10%);
+       /* transform: translateX(10%);*/
         width: 100%;
     }
     #navbarContent ul li {
@@ -231,13 +389,20 @@ footer{
         margin-right: 10px;
         /*justify-content: space-between;*/
     }
+    .conte-page{
+        width: 95%;
+        margin: auto;
+    }
+    .pani{
+        font-size: 1.6em;
+    }
     .titre{
         font-size: .9em;
     }
    .cont-articles {
        width: 100%;
        flex-wrap: wrap;
-       font-size: .8em;
+       font-size: 1em;
    }
    .section-ted {
        width: 100%;
@@ -261,6 +426,29 @@ footer{
     transform: scale(1.1);
     transition: .3s;
 }
+#descript{
+    margin-left: 0px;
+}
+#bouton{
+    font-size: 1em;
+    margin-top: 5%;
+    width: 300px;
+    height: auto;
+    margin-left: 15%;
+    margin-right: auto;
+}
+.bouton_panier{
+    font-size: 1em;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: auto;
+    width: 300px;
+    height: auto;
+}
+.coll{
+    width: 100%;
+    margin: auto;
+}
 
    footer{
        width: 100%;
@@ -280,33 +468,47 @@ footer div {
     flex-wrap: wrap;
 }
 }
-@media screen and (min-width: 310px) and (max-width: 374px){
+@media screen and (max-width: 374px){
+    header{
+        width: 100%;
+        font-size: .7em;
+    }
     .panier {
-        transform: translateX(10px);
+        width: 80px;
+        transform: translateX(0px);
+    }
+    .pani{
+        margin-left: 1%;
+    }
+    nav > a {
+        transform: translateX(40px)
     }
     #navbarContent  ul li a {
+        font-size: .8em;
         text-align: center;
-        width: 110px;
+        width: 80px;
         height: 60px;
         color:white;
         background-color: #D35400;
     }
     #navbarContent {
         width: 40%;
-        transform: translateX(10%);
-        /*justify-content: space-between;*/
+
     }
 
     #navbarContent ul {
         display: flex;
         flex-direction: column;
-        transform: translateX(10%);
         width: 100%;
     }
     #navbarContent ul li {
         margin-left: 10px;
         margin-right: 10px;
-        /*justify-content: space-between;*/
+    }
+    .conte-page{
+    
+        width: 95%;
+        margin: auto;
     }
     .titre{
         font-size: .9em;
@@ -328,6 +530,18 @@ footer div {
     flex-direction: column;
     justify-content: space-between;
 }
+#bouton{
+    font-size: .8em;
+    width: 200px;
+    height: 50px;
+    margin-left: 10%;
+}
+.bouton_panier{
+    font-size: .8em;
+    margin-left: 10%;
+    width: 200px;
+    height: 50px;
+}
     .image1  {
     width: 95%;
 }
@@ -337,6 +551,16 @@ footer div {
     .image1 > a:hover {
     transform: scale(1.1);
     transition: .3s;
+}
+.pani{
+    font-size: 1.2em;
+}
+#descript{
+    margin-left: 0px;
+}
+.coll{
+    width: 100%;
+    margin: auto;
 }
 
    footer{
