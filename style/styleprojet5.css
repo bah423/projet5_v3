@@ -234,6 +234,9 @@ footer{
     .containeur {
         width: 100%;
     }
+    nav a img {
+        transform: translateX(-15px);
+    }
    .containeur-page {
         width: 100%;
         margin: 0px;
@@ -251,17 +254,17 @@ footer{
     }
     #navbarContent ul li {
         transform: translateX(-70px);
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 3px;
+        margin-right: 3px;
         /*justify-content: space-around;*/
     }
     #navbarContent  ul li a {
         text-align: center;
-        width: 70px;
-        height: 67px;
+        width: 65px;
+        height: 65px;
         padding-top: 0px;
         transform: translateX(0px);
-        font-size: .8em;
+        font-size: .65em;
         color:white;
         background-color: #D35400;
     }

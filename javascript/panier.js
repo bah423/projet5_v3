@@ -40,9 +40,8 @@ TableidGlobal.forEach(element => {
     
 });
 //Affichage du sous-total
-//document.getElementById("subtotal").innerHTML += totalPanier1;
 
-//Panier si c'est une caméra qui est choisi
+/*Panier si c'est une caméra qui est choisi
 TableidGlobal.forEach(element => {
     article = element.split(",");
     console.log(article);
@@ -65,7 +64,6 @@ TableidGlobal.forEach(element => {
     
 });
 //Affichage du sous-total
-//document.getElementById("subtotal").innerHTML += totalPanier2;
 
 //Panier si c'est une caméra qui est choisi
 TableidGlobal.forEach(element => {
@@ -88,10 +86,10 @@ TableidGlobal.forEach(element => {
     };
    xmlhttp.send();
     
-});
+});*/
 
-//Affichage du sous-total
-var panierTotal = (totalPanier1 + totalPanier2 + totalPanier3)/100;
+//Affichage du sous-total supprimé du calcul: + totalPanier2 + totalPanier3
+var panierTotal = (totalPanier1)/100;
 document.getElementById("subtotal").innerHTML += panierTotal;
  
 //Traitement du formulaire
@@ -104,7 +102,7 @@ document.getElementById("inscription").addEventListener("submit", function(e){
     var adress = document.getElementById("adress");
     var ville = document.getElementById("ville");
 
-    if(!prenom.value){
+   /* if(!prenom.value){
         alert("Veillez renseigner votre prénom");
     }
     else if(!nom.value){
@@ -121,7 +119,7 @@ document.getElementById("inscription").addEventListener("submit", function(e){
     } else{
         alert("Votre formulaire a été envoyé   avec succès !")
     }
-   return false;
+   return false;*/
 });
 
 /* Envoi des données du formulaire à la base de données*/
@@ -166,9 +164,9 @@ function sendData(event) {
     });
   
     XHR.onreadystatechange = function() {
-        if (XHR.status == 201) {
-            myArr   = JSON.parse(XHR.responseText); 
-           sessionStorage.setItem("order",XHR.responseText)
+        if (this.readyState == 4 && this.status == 201) {
+           myArr   = JSON.parse(this.responseText)
+           sessionStorage.setItem("order",this.responseText)
            window.open("command.html","_blank")
         }}
 
@@ -177,11 +175,13 @@ function sendData(event) {
     if (typeObjet == 1){
         url = "http://localhost:3000/api/teddies/order";
 
-    }else if(typeObjet == 2){
+    }
+    /*else if(typeObjet == 2){
         url = "http://localhost:3000/api/cameras/order";
     } else if(typeObjet == 3) {
         url = "http://localhost:3000/api/furniture/order";
-    } else {
+    }*/ 
+    else {
         alert("Error calling of API !");
     }
     

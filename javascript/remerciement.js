@@ -12,13 +12,7 @@ function getCommandInfo() {
         
     }
     console.log(totalPrice);
-    /*const reducer = (accumulator, currentValue) => (accumulator.price + currentValue.price)/100*/
     command_orderId.innerText = jsonOrder.orderId
-    /*if(jsonOrder.products.length == 1){
-        command_price.innerText = jsonOrder.products[0].price
-    } else {
-        command_price.innerText = jsonOrder.products.reduce(reducer)
-    }*/
     command_price.innerText = totalPrice/100;
     command_email.innerText = jsonOrder.contact.email
     }

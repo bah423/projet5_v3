@@ -65,7 +65,7 @@ function functionOurs(objetOurs){
 });
 }
 
-//Affichage d'un élément camera choisi
+/*Affichage d'un élément camera choisi
 var xmlhttp = new XMLHttpRequest();
 var url = "http://localhost:3000/api/cameras/"+id;
 
@@ -152,7 +152,7 @@ function functionMeuble(objetOurs){
         }
     }
     });
-}
+}*/
 
 //Indiquer le nombre de produit dans le panier 
 

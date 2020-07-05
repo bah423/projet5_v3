@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="/style/panier.css">
 <title>ORINOCO</title>
 
-<body onload="getArticleShop()">
+<body >
     <div class="container-page">
           
         <!--L'en-tête de la page-->
@@ -65,20 +65,20 @@
         <form  onsubmit="sendData(event)" method="post" enctype="multipart/form-data" class="formulaire" id="inscription">
             
                 <label for="firstName"> Prénom</label>
-                <input type="text" name="firstName" id="firstName" required>
+                <input type="text" name="firstName" id="firstName" required pattern="[A-Z]{1}[a-z]*">
             
           
                 <label for="lastName"> Nom</label>
-                <input type="text" name="lastName" id="lastName" required>
+                <input type="text" name="lastName" id="lastName" required pattern="[A-Z]{,1}[a-z]*">
             
                 <label for="email"> Adresse mail</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required pattern="[a-z]{,3}-[@]+[a-z]$">
            
                 <label for="address"> Adresse Postale</label>
-                <input type="text" name="address" id="address" required>
+                <input type="text" name="address" id="address" required >
             
                 <label for="city"> Ville</label>
-                <input type="text" name="city" id="city" required>
+                <input type="text" name="city" id="city" required pattern="[A-Z]{1}+[-][a-z]*">
        <!--Passer la commande-->
        <a href="command.html" class="vers-commandes">
         <button  type="submit" target="_blank" class="vers-commande" id="bEnvoi"> Passer la commande</button>
