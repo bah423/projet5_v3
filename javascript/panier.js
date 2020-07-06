@@ -10,8 +10,8 @@ function getPanierNumber(){
 var typeObjet = 0;
 //Total panier
 var totalPanier1 = 0;
-var totalPanier2 = 0;
-var totalPanier3 = 0;
+/*var totalPanier2 = 0;
+var totalPanier3 = 0;*/
 
 var TableidGlobal = sessionStorage.getItem("listeGlobal");
 console.log(TableidGlobal);
@@ -39,56 +39,8 @@ TableidGlobal.forEach(element => {
        xmlhttp.send();
     
 });
+
 //Affichage du sous-total
-
-/*Panier si c'est une caméra qui est choisi
-TableidGlobal.forEach(element => {
-    article = element.split(",");
-    console.log(article);
-    var xmlhttp = new XMLHttpRequest();
-    var url = "http://localhost:3000/api/cameras/"+article;
-    console.log(url);
-    xmlhttp.open("GET", url, false);
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            typeObjet = 2;
-            jsonArticle = JSON.parse(this.responseText);
-            console.log(jsonArticle);
-            z = "<img src='"+jsonArticle['imageUrl']+"' '/>"+"<p>"+"prix:"+" "+jsonArticle['price']/100+" "+"€"+"</p>"+"<p>"+jsonArticle['description']+"</p>";
-            document.getElementById("panier1").innerHTML += z;
-            totalPanier2 = totalPanier2+jsonArticle['price'];
-            console.log(totalPanier2);
-        }
-    };
-   xmlhttp.send();
-    
-});
-//Affichage du sous-total
-
-//Panier si c'est une caméra qui est choisi
-TableidGlobal.forEach(element => {
-    article = element.split(",");
-    console.log(article);
-    var xmlhttp = new XMLHttpRequest();
-    var url = "http://localhost:3000/api/furniture/"+article;
-    console.log(url);
-    xmlhttp.open("GET", url, false);
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            typeObjet = 3;
-            jsonArticle = JSON.parse(this.responseText);
-            console.log(jsonArticle);
-            z = "<img src='"+jsonArticle['imageUrl']+"' />"+"<p>"+"prix:"+" "+jsonArticle['price']/100+" "+"€"+"</p>"+"<p>"+jsonArticle['description']+"</p>";
-            document.getElementById("panier1").innerHTML += z;
-            totalPanier3 = totalPanier3+jsonArticle['price'];
-            console.log(totalPanier3);
-        }
-    };
-   xmlhttp.send();
-    
-});*/
-
-//Affichage du sous-total supprimé du calcul: + totalPanier2 + totalPanier3
 var panierTotal = (totalPanier1)/100;
 document.getElementById("subtotal").innerHTML += panierTotal;
  
@@ -101,25 +53,6 @@ document.getElementById("inscription").addEventListener("submit", function(e){
     var mail = document.getElementById("mail");
     var adress = document.getElementById("adress");
     var ville = document.getElementById("ville");
-
-   /* if(!prenom.value){
-        alert("Veillez renseigner votre prénom");
-    }
-    else if(!nom.value){
-        alert("Veillez renseigner votre nom");
-    }
-    else if(!mail.value){
-        alert("Veillez renseigner votre mail");
-    }
-    else if(!adress.value){
-        alert("Veillez renseigner votre adresse");
-    }
-    else if(!ville.value){
-        alert("Veillez renseigner le nom de votre ville");
-    } else{
-        alert("Votre formulaire a été envoyé   avec succès !")
-    }
-   return false;*/
 });
 
 /* Envoi des données du formulaire à la base de données*/
@@ -175,13 +108,7 @@ function sendData(event) {
     if (typeObjet == 1){
         url = "http://localhost:3000/api/teddies/order";
 
-    }
-    /*else if(typeObjet == 2){
-        url = "http://localhost:3000/api/cameras/order";
-    } else if(typeObjet == 3) {
-        url = "http://localhost:3000/api/furniture/order";
-    }*/ 
-    else {
+    }else {
         alert("Error calling of API !");
     }
     

@@ -310,7 +310,7 @@ footer{
     }
     nav ul li a{
         font-size: .8em;
-        width: 150px;
+        width: 140px;
         color: white;
         background-color: #5499C7;
     }
@@ -321,8 +321,11 @@ footer{
         width: 90%;
         margin: auto;
     }
+    .titre1 {
+        font-size: 1em;
+    }
     .teddy a {
-        font-size: 1.2em;
+        font-size: 1.1em;
         width: 100%;
     }
     .teddy > a:hover {

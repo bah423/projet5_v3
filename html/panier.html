@@ -65,20 +65,25 @@
         <form  onsubmit="sendData(event)" method="post" enctype="multipart/form-data" class="formulaire" id="inscription">
             
                 <label for="firstName"> Prénom</label>
-                <input type="text" name="firstName" id="firstName" required pattern="[A-Z]{1}[a-z]*">
+                <input type="text" name="firstName" id="firstName" required pattern="[A-Z]{1}[a-z]*"
+                 title="Le prénom contient une seule letter majuscule" placeholder="Alain">
             
           
                 <label for="lastName"> Nom</label>
-                <input type="text" name="lastName" id="lastName" required pattern="[A-Z]{,1}[a-z]*">
+                <input type="text" name="lastName" id="lastName" required pattern="[A-Z]{1,}[a-z]*"
+                title="Le nom contient au moins une letter majuscule" placeholder="RENAULD">
             
                 <label for="email"> Adresse mail</label>
-                <input type="email" name="email" id="email" required pattern="[a-z]{,3}-[@]+[a-z]$">
+                <input type="email" name="email" id="email" required pattern="[a-z@?\d\.\-]{10,}"
+                title="Le mail contient au moins dix caractères" placeholder="monmail@bien.com">
            
                 <label for="address"> Adresse Postale</label>
-                <input type="text" name="address" id="address" required >
+                <input type="text" name="address" id="address" required pattern="[A-Za-z\d\s\-]{10,}"
+                title="L'adresse est constituée d'aumoins de dix caractères" placeholder="2 Rue Marcel Paul">
             
                 <label for="city"> Ville</label>
-                <input type="text" name="city" id="city" required pattern="[A-Z]{1}+[-][a-z]*">
+                <input type="text" name="city" id="city" required pattern="[A-Za-z\d\-]{3,}"
+                title="Le nom de la ville contient au moins trois lettres" placeholder="Paris">
        <!--Passer la commande-->
        <a href="command.html" class="vers-commandes">
         <button  type="submit" target="_blank" class="vers-commande" id="bEnvoi"> Passer la commande</button>
